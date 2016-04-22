@@ -9,13 +9,14 @@ module.exports = function (host, path) {
       'user-agent': 'curl/7.43.0',
     },
   }, function (res) {
+    var chunkStrig = '';
     res.setEncoding('utf8');
     res.on('data', function (chunk) {
-      console.log(chunk.toString());
+      chunkStrig += chunk.toString();
     });
-    // res.on('end', function () {
-    //   console.log('No more data in response.')
-    // });
+    res.on('end', function () {
+      console.log(chunkStrig);
+    });
   });
 
   req.on('error', function (e) {
