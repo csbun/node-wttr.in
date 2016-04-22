@@ -1,0 +1,30 @@
+{
+  "name": "wttr",
+  "version": "0.0.1",
+  "description": "A node CLI for [wttr.in](https://github.com/chubin/wttr.in)",
+  "main": "index.js",
+  "bin": {
+    "wttr": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csbun/node-wttr.in.git"
+  },
+  "keywords": [
+    "wttr",
+    "weather",
+    "cli"
+  ],
+  "author": "Hans Chan <icsbun@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csbun/node-wttr.in/issues"
+  },
+  "homepage": "https://github.com/csbun/node-wttr.in#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
