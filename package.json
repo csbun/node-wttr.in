@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/csbun/node-wttr.in#readme",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "moment": "^2.13.0"
   }
 }
